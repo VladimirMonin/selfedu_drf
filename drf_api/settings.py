@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'woman.apps.WomanConfig'  # Правильно это подключается так. Через класс конфига нашего аппа
+    'woman.apps.WomanConfig',  # Правильно это подключается так. Через класс конфига нашего аппа
+    'rest_framework',
+
 ]
 
 MIDDLEWARE = [
