@@ -13,7 +13,8 @@ class Woman(models.Model):
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=100, db_index=True)
+    name = models.CharField(max_length=100, db_index=True)  # db_index создает индекс в БД по полю, для ускорения
+    # работы запросов связанных с этим полем
 
     def __str__(self):
         return self.name
