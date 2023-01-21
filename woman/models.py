@@ -1,4 +1,6 @@
 from django.db import models
+from jsonschema._validators import required
+
 
 class Woman(models.Model):
     title = models.CharField(max_length=300)
@@ -14,6 +16,7 @@ class Woman(models.Model):
 
 class Category(models.Model):
     name = models.CharField(max_length=100, db_index=True)  # db_index создает индекс в БД по полю, для ускорения
+
     # работы запросов связанных с этим полем
 
     def __str__(self):
