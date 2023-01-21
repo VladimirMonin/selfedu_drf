@@ -8,6 +8,7 @@ class WomanSerializer(serializers.ModelSerializer):
         model = Woman
         fields = '__all__'
 
+
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
