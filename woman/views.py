@@ -1,6 +1,6 @@
 from rest_framework import generics
 from woman.models import Woman, Category
-from woman.serializers import WomanSerializer
+from woman.serializers import WomanSerializer, CategorySerializer
 
 
 class WomanAPIView(generics.ListAPIView):
@@ -10,4 +10,4 @@ class WomanAPIView(generics.ListAPIView):
 
 class CategoryAPIView(generics.ListAPIView):
     queryset = Category.objects.all()
-    serializer_class = WomanSerializer
+    serializer_class = CategorySerializer
